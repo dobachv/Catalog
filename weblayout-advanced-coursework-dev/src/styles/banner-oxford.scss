@@ -1,0 +1,90 @@
+
+@import 'minix';
+
+.banner-oxford{
+    margin: 0;
+    background-image: url(images/banner-oxford.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   @include respond-to(handhelds){
+    background-image: url(images/banner-oxford_1.png);
+   }
+   @include respond-to(medium-screens){
+    background-position: left;
+   }
+   @include respond-to(wide-screens){
+    height: 209px;
+    background-image: url(images/banner-oxford_320.png);
+    background-size: cover;
+    background-position: top;
+   }
+  }
+
+  .banner-oxford__h1{
+    margin-bottom: 49px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.6px;
+    color: $colorGray;
+    color: $colorWhite;
+    @include respond-to(wide-screens){
+      padding-right: 70px;
+      font-size: 16px;
+      line-height: 20.24px;
+      margin-bottom: 143px;
+     }
+  }
+
+  .banner-oxford__container{    
+    @include respond-to(medium-screens){
+        padding: 0 36px;
+    }
+
+    @include respond-to(wide-screens){
+      padding: 0 12px;
+      height: 100%;
+      position: relative;
+     }
+  }
+
+  .banner-oxford__content{
+    max-width: 700px;
+    padding: 153px 0 152px 0;
+    @include respond-to(handhelds){
+      padding: 155px 0 148px 0
+     }
+     @include respond-to(medium-screens){
+      padding: 155px 0 152px 0
+     }
+     @include respond-to(wide-screens){
+      padding: 0 12px;
+     }
+    }
+
+
+
+  .banner-oxford__btn{
+    @include btn-violet();
+    padding: 20px 29px 22px 33px;
+    @include respond-to(wide-screens){
+      position: absolute;
+      width: 296px;
+      bottom: -93px;
+      left: 10px;
+    }
+  }
+
+  .banner-oxford__title{
+    font-family: "Playfair Display";
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 72px;
+    color: $colorBeige;
+    @include respond-to(wide-screens){
+      padding: 31px 42px 0px 0px;
+      font-size: 24px;
+      line-height: 28.8px;
+    }
+  }

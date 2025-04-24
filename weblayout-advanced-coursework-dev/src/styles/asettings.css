@@ -1,0 +1,257 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media only screen and (max-width: 1186px) {
+  .container {
+    padding: 0 36px;
+  }
+}
+@media only screen and (max-width: 882px) {
+  .container {
+    padding: 0 70px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.h2 {
+  margin-bottom: 26px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #333333;
+}
+@media only screen and (max-width: 670px) {
+  .h2 {
+    font-size: 24px;
+    line-height: 24.07px;
+  }
+}
+
+.h3 {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  color: #333333;
+}
+
+.mr-l {
+  margin-left: 30px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+@media only screen and (max-width: 670px) {
+  .mb-18 {
+    margin-bottom: 15px;
+  }
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.p-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.2px;
+  color: #333333;
+}
+
+.p-text-gray {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #999999;
+}
+
+.p-16 {
+  font-size: 16px;
+  line-height: 28.8px;
+}
+@media only screen and (max-width: 670px) {
+  .p-16 {
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+}
+
+.p-24 {
+  font-size: 24px;
+  line-height: 30.32px;
+}
+@media only screen and (max-width: 670px) {
+  .p-24 {
+    font-size: 16px;
+    line-height: 20.08px;
+  }
+}
+
+.p-36 {
+  font-size: 36px;
+  line-height: 46.8px;
+}
+@media only screen and (max-width: 670px) {
+  .p-36 {
+    font-size: 24px;
+    line-height: 31.32px;
+  }
+}
+
+.gray {
+  color: #999999;
+}
+
+.p-bold {
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #333333;
+}
+
+.p-bold-orange {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.79px;
+  color: #FF862F;
+}
+
+.price {
+  margin-bottom: 25px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: #999999;
+}
+@media only screen and (max-width: 670px) {
+  .price {
+    margin-bottom: 18px;
+  }
+}
+
+.filter-text {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  color: #666;
+}
+
+.link-svg {
+  vertical-align: bottom;
+}
+
+.link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  color: #A65CF0;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-text-decoration 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, text-decoration 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-text-decoration 0.2s ease-in-out;
+}
+.link:hover .link-tex {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #A65CF0;
+}
+.link:hover .link-svg {
+  background-color: #A65CF0;
+  border-radius: 50%;
+}
+.link:hover .link-svg path {
+  stroke: #fff;
+}
+.link:hover .link-svg circle {
+  stroke: #A65CF0;
+}
+.link:focus .link-tex {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #A65CF0;
+}
+.link:focus .link-svg {
+  background-color: #C998FB;
+  border-radius: 50%;
+}
+.link:focus .link-svg path {
+  stroke: #fff;
+}
+.link:focus .link-svg circle {
+  stroke: #A65CF0;
+}
+.link:active .link-tex {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #7033AC;
+}
+.link:active .link-svg {
+  background-color: #7033AC;
+  border-radius: 50%;
+}
+.link:active .link-svg path {
+  stroke: #fff;
+}
+.link:active .link-svg circle {
+  stroke: #7033AC;
+}
+@media only screen and (max-width: 670px) {
+  .link {
+    display: none;
+  }
+}
+
+.hyphens {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}/*# sourceMappingURL=asettings.css.map */

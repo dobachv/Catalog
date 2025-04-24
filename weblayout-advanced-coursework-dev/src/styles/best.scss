@@ -1,0 +1,48 @@
+@import 'minix';
+
+.best__container{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  @include respond-to(handhelds){
+    padding-bottom: 40px;
+    padding-top: 73px;
+   }
+   @include respond-to(medium-screens){
+   padding-top: 72px;
+    padding-bottom: 36px;
+   }
+   @include respond-to(wide-screens){
+    padding-top: 72px;
+    padding-bottom: 55px;
+    }
+}
+
+.best__content{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+  overflow: auto;
+  @include respond-to(handhelds){
+    grid-auto-rows: 0;
+    overflow: hidden;
+   }
+     @include respond-to(medium-screens){
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 34px;
+   }
+   @include respond-to(wide-screens){
+    column-gap: 14px;
+    row-gap: 16px;
+   }
+
+   .price{
+    margin-bottom: 24px;
+    @include respond-to(wide-screens){
+      margin-bottom: 18px;
+    }
+  }
+}
+

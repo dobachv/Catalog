@@ -1,0 +1,71 @@
+@import 'minix';
+
+.banner{
+  margin-top: 32px;
+  background-image: url(images/banner.png);
+	background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include respond-to(handhelds){
+    background-image: url(images/banner_1.png);
+   }
+    @include respond-to(medium-screens){
+    background-image: url(images/banner_768.png);
+   }
+   @include respond-to(wide-screens){
+
+    margin-top: 33px;
+    max-height: 212px;
+    background-image: url(images/banner_320.png);
+    background-size: cover;
+    background-position: bottom;
+
+   }
+
+
+
+}
+
+.banner__h3{
+  margin-bottom: 49px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65.37px;
+  color: $colorGray;
+  @include respond-to(medium-screens){
+    margin-bottom: 51px;
+  }
+  @include respond-to(wide-screens){
+    padding: 31px 42px 0px 18px;
+    font-size: 20px;
+    line-height: 27.24px;
+   }
+
+}
+
+.banner__container{
+  padding: 83px 727px 80px 14px;
+  @include respond-to(handhelds){
+    padding: 83px 500px 80px 35px;
+   }
+   @include respond-to(medium-screens){
+    padding: 80px 200px 80px 73px;
+   }
+   @include respond-to(wide-screens){
+    position: relative;
+    min-height: 210px;
+    padding: 0 12px;
+   }
+}
+
+.banner__btn{
+  @include btn-violet();
+  @include respond-to(wide-screens){
+    position: absolute;
+    width: 296px;
+    bottom: -93px;
+  }
+}
+
+

@@ -1,0 +1,197 @@
+@import 'minix';
+
+.proposal__container{
+  padding-top: 70px;
+  @include respond-to(wide-screens){
+    padding-top: 162px;
+  }
+}
+
+.proposal__card-img{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.proposal__card-block{
+  max-width: 296px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 41px 30px 30px;
+  @include respond-to(wide-screens){
+    padding: 0 40px 30px 30px;
+  }
+}
+
+.proposal__content{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-columns: 0;
+  grid-auto-rows: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  column-gap: 32px;
+  @include respond-to (handhelds){
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include respond-to(medium-screens){
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: 0;
+    overflow-y: hidden;
+   }
+  @include respond-to(wide-screens){
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 0;
+    row-gap: 25px;
+  }
+}
+.proposal__card{
+  position: relative;
+  display: grid;
+  gap: 16px;
+  grid-template-rows: 283px auto;
+  background-color: $colorGraylight;
+  border-radius: 10px;
+  grid-column: span 4;
+  @include respond-to(handhelds){
+    grid-column: span 1;
+  }
+  @include respond-to(wide-screens){
+    grid-column:  span 3;
+    grid-row: span 1;
+  }
+
+}
+
+
+.card-armchair{
+  grid-column: 1 / span 3;
+  @include respond-to(handhelds){
+    grid-column: 1 / span 1;
+   }
+   @include respond-to(medium-screens){
+    grid-column:  span 1;
+   }
+   @include respond-to (wide-screens){
+    grid-column:  span 3;
+   }
+
+
+}
+
+.card-clock{
+  grid-column: 10 / span 3;
+
+  .proposal__card-bg{
+    padding-left: 25px;
+  }
+
+  @include respond-to(handhelds){
+    grid-column: 3 / span 1;
+   }
+   @include respond-to(medium-screens){
+    grid-column:  span 1;
+   }
+   @include respond-to (wide-screens){
+    grid-column:  span 3;
+   }
+
+}
+
+.card-sofa{
+  grid-column: 4 / span 6;
+
+  .proposal__card-block{
+    padding: 0px 386px 30px 30px;
+    max-width: 624px;
+  }
+
+  @include respond-to(handhelds){
+    grid-column: 2 / span 1;
+    .proposal__card-block{
+      padding: 0px 30px 30px 30px;
+    }
+    img{
+      width: 100%;
+    }
+    .proposal__card-img{
+      padding: 32px 21px;
+    }
+   }
+   @include respond-to(medium-screens){
+    grid-column:  span 1;
+   }
+   @include respond-to (wide-screens){
+    grid-column:  span 3;
+    .proposal__card-block{
+      max-width: 296px;
+    }
+   }
+}
+
+.proposal__card-h3{
+  margin-bottom: 20px;
+}
+
+.proposal__card-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.proposal__price{
+  margin-bottom: 23px;
+  display: flex;
+  gap:30px;
+  flex-wrap: wrap;
+}
+
+.proposal__new-price{
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: $colorOrange;
+}
+
+.proposal__old-price{
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: $colorGray;
+  text-decoration: line-through;
+}
+
+.proposal__card-btn{
+  max-width: 128px;
+  @include btn-white();
+}
+
+.proposal__card-bg{
+  position: absolute;
+  padding: 8px 29px 6px 19px;
+  background: url(images/bg.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top:30px;
+  left: 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.07px;
+  color: $colorWhite;
+}
+
+.proposal__card-scheme{
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  @include respond-to(handhelds){
+    display: none;
+   }
+}

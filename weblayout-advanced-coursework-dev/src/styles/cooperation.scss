@@ -1,0 +1,151 @@
+@import 'minix';
+
+
+
+.cooperation__h3{
+  margin-bottom: 12px;
+}
+
+.cooperation__h2{
+  margin-bottom: 0;
+}
+
+.cooperation__container{
+	padding-top: 22px;
+	padding-bottom: 55px;
+  @include respond-to(handhelds){
+    padding-bottom: 60px;
+  }
+  @include respond-to(medium-screens){
+    padding-top: 23px;
+    padding-bottom: 58px;
+  }
+  @include respond-to(wide-screens){
+    padding-top: 5px;
+    padding-bottom: 57px;
+  }
+}
+
+.cooperation__content{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap:36px;
+  @include respond-to(medium-screens){
+    gap:35px;
+  }
+  @include respond-to(wide-screens){
+    gap:31px;
+  }
+}
+
+.cooperation__supplier{
+ max-width: 842px;
+}
+
+.cooperation__acquisition{
+  max-width: 624px;
+}
+
+.cooperation__acquisition-list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cooperation__acquisition-svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.cooperation__acquisition-item{
+  position: relative;
+  padding-left: 37px;
+  line-height: 24px;
+  @include respond-to(wide-screens){
+    line-height: 21px;
+  }
+}
+
+.cooperation__advantage-title{
+  @include respond-to(wide-screens){
+    font-size: 14px;
+    line-height: 19.07px;
+  }
+}
+
+.cooperation__advantage{
+  max-width: 842px;
+}
+
+.cooperation__advantage-list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @include respond-to(medium-screens){
+    gap: 13px;
+  }
+}
+
+.cooperation__guarantee{
+  max-width: 842px;
+}
+
+.cooperation__guarantee-list{
+  counter-reset: num;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @include respond-to(medium-screens){
+    gap: 13px;
+  }
+  @include respond-to(wide-screens){
+    gap: 9px;
+  }
+}
+
+
+.cooperation__guarantee-item{
+  padding-left: 25px;
+  position: relative;
+  @include respond-to(medium-screens){
+    padding-left: 27px;
+  }
+}
+
+.cooperation__guarantee-item:before{
+  content: counter(num) ".";
+  counter-increment: num;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  color: $colorOrange;
+}
+
+.cooperation__note{
+  max-width: 613px;
+  @include respond-to(wide-screens){
+    max-width: 270px;
+  }
+}
+
+.cooperation__note-title{
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  @include respond-to(wide-screens){
+    gap: 16px;
+    line-height: 24px;
+    img{
+      width: 36px;
+      height: 54px;
+    }
+  }
+}
+
+
+

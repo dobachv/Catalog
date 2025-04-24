@@ -1,0 +1,85 @@
+@import 'minix';
+
+.useful__content{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  column-gap: 32px;
+  grid-auto-rows: 0;
+  overflow-y: hidden;
+  @include respond-to(wide-screens){
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 26px;
+  }
+
+}
+
+.useful__container{
+  padding-top: 70px;
+  @include respond-to(medium-screens){
+    padding-top: 72px;
+  }
+}
+
+.useful__card{
+  display: grid;
+  grid-template-rows: 426px auto;
+  grid-column:  span 3;
+  background-color: $colorGraylight;
+  border-radius: 10px;
+  @include respond-to(handhelds){
+    grid-template-rows: 202px auto;
+    grid-column:  span 2;
+   }
+   @include respond-to(medium-screens){
+   grid-column:  span 3;
+  }
+  @include respond-to(wide-screens){
+    grid-column:  span 1;
+  }
+}
+
+.useful__card-btn{
+  width: 128px;
+  @include btn-white();
+}
+
+.useful__card-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 30px;
+  @include respond-to(handhelds){
+    padding: 30px;
+   }
+}
+
+.useful__card-h3{
+  margin-bottom: 40px;
+  @include respond-to(handhelds){
+   margin-bottom: 31px;
+   font-size: 16px;
+   line-height: 21.79px;
+  }
+}
+
+.useful__card-img{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  @include respond-to(wide-screens){
+    img{
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+.useful__h2{
+  margin-bottom: 30px;
+  @include respond-to(wide-screens){
+    margin-bottom: 25px;
+  }
+}

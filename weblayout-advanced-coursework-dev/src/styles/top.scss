@@ -1,0 +1,261 @@
+@import 'minix';
+
+.top__content{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+  gap: 32px;
+  overflow: auto;
+  @include respond-to(medium-screens){
+    grid-template-rows: auto auto auto;
+    column-gap: 32px;
+    row-gap: 35px;
+  }
+  @include respond-to(wide-screens){
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 32px;
+   }
+
+}
+
+.top__btn{
+  display: none;
+  @include respond-to(wide-screens){
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+
+.top__container{
+  padding-top: 70px;
+  @include respond-to(wide-screens){
+    padding-top: 164px;
+  }
+}
+
+.top__item-linc{
+  background-color: transparent;
+  transition:  background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover{
+    color:$colorViolet;
+    background-color: transparent;
+  }
+  &:focus{
+    color: $colorVioletDark;
+    background-color: $colorVioletFon;
+  }
+  &:active{
+    color: $colorVioletDark;
+    background-color: transparent;
+  }
+}
+
+.top__list{
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  @include respond-to(wide-screens){
+    gap: 20px;
+  }
+}
+
+.top__card{
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-between;
+  padding: 28px 0;
+  background-color: $colorGraylight;
+  border-radius: 10px;
+  @include respond-to(wide-screens){
+    padding: 31px 0;
+    grid-column:  span 1;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+.top__card-sofa, .top__card-armchair{
+  grid-column:  span 6;
+}
+
+.top__card-bed, .top__card-dresser, .top__card-chair {
+  grid-column:  span 4;
+}
+
+.top__card-dresser, .top__card-chair,.top__card-armchair{
+
+  @include respond-to(handhelds){
+    img{
+      height: 300px;
+    }
+    .top__card-img{
+      margin-bottom: 40px;
+      justify-content: flex-end;
+      padding-right: 35px;
+    }
+    padding-top: 26px;
+  }
+
+  @include respond-to(medium-screens){
+    .top__card-img{
+      margin-bottom: 38px;
+    }
+  }
+}
+
+
+.top__card-sofa{
+  @include respond-to(handhelds){
+    grid-column:  span 8;
+    grid-row: 1;
+   }
+    @include respond-to(medium-screens){
+    grid-column:  span 12;
+    grid-row: 1;
+   }
+   @include respond-to(wide-screens){
+    grid-column:  span 2;
+    .top__nav{
+      overflow-x: auto;
+    }
+    .top__card-img
+    {
+      overflow:visible;
+    }
+     img{
+      width: 100%;
+      height: 120%;
+     }
+   }
+}
+
+.top__card-armchair{
+  @include respond-to(handhelds){
+    grid-column:  5 / span 4;
+    grid-row: 2;
+   }
+    @include respond-to(medium-screens){
+    grid-column:  span 6;
+   }
+   @include respond-to(wide-screens){
+    grid-column: 2 / span 1;
+    @include top-card-320();
+
+  }
+}
+
+
+.top__card-bed{
+  grid-column: 1 / span 4;
+  grid-row: 2;
+  @include respond-to(handhelds){
+    grid-column:  span 4;
+    grid-row: 1;
+    img{
+      height: 296px;
+    }
+    .top__card-img{
+      margin-bottom: 40px;
+    }
+    padding-top: 26px;
+  }
+
+  @include respond-to(medium-screens){
+    grid-column:  1 / span 6;
+    grid-row: 2;
+   }
+   @include respond-to(wide-screens){
+    grid-column: 1 / span 1;
+    @include top-card-320();
+    img{
+      width: 116%;
+    }
+    .top__card-img{
+      margin-bottom: 17px;
+      justify-content: flex-start;
+    }
+
+  }
+
+
+}
+
+.top__card-dresser, .top__card-chair {
+  grid-column:  span 4;
+  grid-row: 2;
+  @include respond-to(handhelds){
+    grid-column:  span 4;
+    grid-row: 2;
+  }
+  @include respond-to(medium-screens){
+    grid-column:  span 6;
+    grid-row: 3;
+  }
+  @include respond-to(wide-screens){
+    grid-column:  span 1;
+    @include top-card-320();
+    img{
+      width: 106%;
+    }
+    .top__card-h3{
+      margin-bottom: 21px;
+    }
+    .top__nav{
+      padding-top: 15px;
+      margin-bottom: 7px;
+    }
+    .top__card-img{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.top__card-dresser{
+  @include respond-to(wide-screens)
+  {
+   .top__btn{
+    width: 54px;
+   }
+  }
+}
+
+.top__nav{
+  margin-bottom: 14px;
+  overflow-x: auto;
+  @include respond-to(wide-screens){
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+}
+
+.top__card-h3{
+  margin-bottom: 30px;
+  @include respond-to(wide-screens){
+    margin-bottom: 10px;
+   }
+}
+
+.top__card-img{
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: flex;
+
+  @include respond-to(wide-screens){
+    justify-content: flex-start;
+    margin-bottom: 26px;
+   }
+}
+
+.top__link{
+  padding-left: 32px;
+}
+
+
+
+
+

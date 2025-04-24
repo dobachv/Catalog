@@ -1,0 +1,132 @@
+@import 'minix';
+
+.card{
+  display: grid;
+  gap: 16px;
+  grid-template-rows: 191px auto;
+  position: relative;
+  grid-column:  span 3;
+  background-color: $colorGraylight;
+  border-radius: 10px;
+  @include respond-to(handhelds){
+    grid-column:  span 4;
+   }
+     @include respond-to(medium-screens){
+    grid-column:  span 1;
+    gap: 12px;
+   }
+   @include respond-to(wide-screens){
+    grid-template-rows: 88px auto;
+    grid-column:  span 1;
+    gap: 18px;
+   }
+}
+
+.card-star{
+  position: absolute;
+  display: flex;
+  gap: 6.6px;
+  left: 30px;
+  top: 30px;
+  @include respond-to(wide-screens){
+    left: 17px;
+    top: 17px;
+  }
+}
+
+.card-star-svg{
+  width: 15.65px;
+  height: 15px;
+  @include respond-to(wide-screens){
+    width: 12.65px;
+    height: 12px;
+  }
+}
+
+.card-star-p{
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color:$colorOrange;
+  display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  @include respond-to(wide-screens){
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+}
+
+.card-img{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 0 13px;
+
+  @include respond-to(wide-screens){
+    padding: 15px 13px 0;
+    align-items: normal;
+    img{
+      width: 90%;      
+      object-fit: contain;
+      object-position: bottom;
+     }
+  }
+}
+
+.card-block{
+  max-width: 296px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 30px 30px 30px;
+  @include respond-to(handhelds){
+    padding-top: 3px;
+   }
+
+  @include respond-to(medium-screens){
+    padding: 3px 30px 30px 32px;
+
+  }
+
+  @include respond-to(wide-screens){
+    padding: 1px 21px 16px 16px;
+  }
+  }
+
+.card-h3{
+  margin-bottom: 25px;
+  @include respond-to(handhelds){
+    margin-bottom: 20px;
+   }
+   @include respond-to(medium-screens){
+    margin-bottom: 23px;
+   }
+    @include respond-to(wide-screens){
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+}
+
+
+.card-btn{
+  max-width: 128px;
+  @include btn-white();
+  @include respond-to(medium-screens){
+    padding: 18px 33px;
+  }
+
+  @include respond-to(wide-screens){
+    max-width: 105px;
+    padding: 10px 15px 10px 24px;
+  }
+}
+
+.card-text{
+  display: flex;
+  flex-direction: column;
+}

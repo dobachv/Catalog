@@ -1,0 +1,342 @@
+@import 'minix';
+
+.catalog__container{
+  padding-top: 22px;
+  padding-bottom: 70px;
+  @include respond-to(medium-screens){
+    padding-bottom: 70px;
+  }
+  @include respond-to(wide-screens){
+    padding-top: 0px;
+    padding-bottom: 67px;
+  }
+}
+
+.catalog-text{
+  margin-right: 1px;
+  background-color: transparent;
+  transition:  background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover{
+    color:$colorViolet;
+    background-color: transparent;
+  }
+  &:focus{
+    color: $colorVioletDark;
+    background-color: $colorVioletFon;
+  }
+  &:active{
+    color: $colorVioletDark;
+    background-color: transparent;
+  }
+  @include respond-to(wide-screens){
+    display: none;
+  }
+}
+.catalog-text:last-child{
+  color:$colorViolet;
+  margin-right: 0;
+}
+
+.catalog__content{
+  padding-top: 31px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+  column-gap:28px;
+  @include respond-to (handhelds){
+    grid-template-rows: auto auto auto;
+    row-gap: 24px;
+  }
+    @include respond-to (wide-screens){
+    column-gap: 0;
+  }
+}
+
+.catalog__price-content{
+  grid-column:  4 / span 9;
+  grid-row: 2;
+  grid-template-rows: auto auto;
+  @include respond-to (handhelds){
+    grid-row: 3;
+    grid-column: 1 / span 12;
+  }
+}
+
+.catalog__price-list{
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 34px;
+  overflow: auto;
+  @include respond-to(handhelds){
+    gap: 32px;
+ }
+  @include respond-to(medium-screens){
+    grid-auto-rows: 0;
+    overflow-y: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 0;
+    margin-bottom: 0;
+ }
+ @include respond-to(wide-screens){
+    margin-bottom: 10px;
+    column-gap: 14px;
+    overflow: hidden;
+ }
+
+  .card{
+    grid-column:  span 4;
+    @include respond-to(medium-screens){
+      grid-column: span 1;
+      margin-bottom: 35px;
+    }
+    @include respond-to(wide-screens){
+      margin-bottom: 23px;
+      gap:16px;
+    }
+  }
+
+  .price{
+    margin-bottom: 24px;
+    @include respond-to(wide-screens){
+      margin-bottom: 16px;
+    }
+  }
+
+  .card-h3{
+    margin-bottom: 22px;
+    @include respond-to (wide-screens){
+      margin-bottom: 16px;
+    }
+  }
+}
+
+
+.catalog__h2{
+  grid-column: 4 / span 9;
+  grid-row: 1;
+  margin-bottom: 25px;
+  font-size: 24px;
+  @include respond-to (handhelds){
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    margin-bottom: 0;
+  }
+}
+
+
+.catalog__block-btn{
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.catalog__filter{
+  grid-column:  1 / span 3;
+  grid-row: 1 / span 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 28px;
+  @include respond-to (handhelds){
+    grid-row: 2;
+    grid-column: 1 / span 12;
+    flex-direction: row;
+    gap:48px;
+  }
+  @include respond-to (wide-screens){
+    row-gap: 18px;
+    column-gap: 32px;
+    margin-bottom: 10px;
+  }
+}
+
+.catalog__filter-class{
+  @include respond-to (handhelds){
+    margin-right: 37px;
+  }
+  @include respond-to (wide-screens){
+    margin-right: 0;
+  }
+}
+
+.catalog__filter-list{
+  display: flex;
+  gap: 11px;
+  flex-direction: column;
+  @include respond-to(medium-screens){
+    padding-left: 1px;
+    gap: 12px;
+  }
+}
+
+.catalog__filter-price{
+  @include respond-to(wide-screens){
+    .catalog__filter-p{
+      margin-bottom: 4px;
+    }
+  }
+
+}
+
+
+.catalog__filter-h4{
+  margin-bottom: -6px;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  @include respond-to (handhelds){
+  display: none;
+  }
+}
+
+.catalog__filter-p{
+  margin-bottom: 7px;
+  @include respond-to(wide-screens){
+    margin-bottom: 11px;
+  }
+}
+
+.catalog__filter-label{
+  font-weight: 400;
+}
+
+.catalog__checkbox-text{
+  position: relative;
+  font-weight: 400;
+}
+
+.catalog__filter-form{
+  display: flex;
+  gap:10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.catalog__filter-input{
+  width: 85px;
+  padding: 4px 10px;
+  font-weight: 400;
+  border: none;
+  outline: 1px solid $colorGrayDark ;
+  transition:  background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  &:hover{
+    background-color: $colorWhite;
+    outline: 1px solid $colorViolet;
+  }
+  &:focus{
+    outline: 1px solid $colorViolet ;
+    background-color: $colorVioletFon;
+  }
+  &:active{
+    background-color: $colorWhite;
+    outline: 1px solid $colorVioletDark;
+}
+
+}
+
+.catalog__mark{
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+  display: grid;
+  grid-template-rows: 190px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  @include respond-to (handhelds){
+  display: none;
+  }
+}
+
+.catalog__mark-content{
+  padding: 30px 33px 30px 30px;
+  background-color: $colorGrayDark;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 296px;
+}
+
+.catalog__mark-img{
+  background-image: url(images/mark.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog__mark-title{
+  margin-bottom: 5px;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 21.79px;
+  color: $colorBeige;
+}
+
+.catalog__mark-h1{
+ margin-bottom: 11px;
+ font-weight: 400;
+  color: $colorWhite;
+}
+
+
+.catalog__checkbox-input{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+
+.catalog__checkbox-text::before{
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $colorGrayDark;
+  transition: 0.3s;
+}
+
+.catalog__checkbox-input:checked + .catalog__checkbox-text::before {
+  border-color: $colorViolet;
+  background-color: $colorViolet;
+  background-image: url("images/Path3.svg");
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+
+.catalog__checkbox{
+  padding-left: 31px;
+}
+
+.btn-list{
+  @include btn-white();
+  line-height: 16px;
+  color: $colorViolet;
+  padding: 8px 11px;
+}
+
+.btn-list:first-child{
+  @include btn-violet();
+  padding: 8px 11px;
+}
+
+.none{
+  display: none;
+  @include respond-to(medium-screens){
+    display: block;
+  }
+}
+
+

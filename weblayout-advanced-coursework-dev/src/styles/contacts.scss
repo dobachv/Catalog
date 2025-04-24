@@ -1,0 +1,143 @@
+@import 'minix';
+
+.contacts__container{
+  padding-top: 72px;
+  padding-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  @include respond-to(handhelds){
+    grid-template-columns: 405px 1fr;
+   }
+    @include respond-to(medium-screens){
+      padding-top: 69px;
+   }
+   @include respond-to(wide-screens){
+    padding-top: 73px;
+    padding-bottom: 35px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-auto-rows: 0;
+    overflow-y: hidden;
+ }
+
+
+}
+
+
+
+
+.contacts__p{
+  margin-bottom: 16px;
+  line-height: 19.07px;
+  color: $colorGrayDark;
+}
+
+.contacts__h2{
+  margin-bottom: 9px;
+
+}
+
+.contacts__form{
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  @include respond-to(wide-screens){
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__form-btn{
+  @include btn-violet();
+  max-width: 160px;
+  padding: 17px;
+}
+
+
+
+.contacts__input{
+  padding: 7px 18px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  color:  $colorGrayDark;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: $colorGraylight;
+  outline: 1px solid $colorGraylight ;
+  transition:  background-color 0.2s ease-in-out outline 0.2s ease-in-out;
+
+  &:hover{
+    background-color: $colorGrayFonDrak;
+    outline: 1px solid $colorGrayFonDrak;
+  }
+  &:focus{
+    outline: 1px solid $colorViolet ;
+    background-color: $colorGrayFon;
+  }
+  &:active{
+    background-color: $colorGraylight;
+    outline: 1px solid $colorGreen ;
+}
+}
+
+
+.contacts__checkbox-input{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.contacts__checkbox-text{
+  position: relative;
+  line-height: 19.07px;
+  @include respond-to(wide-screens){
+    font-size: 12px;
+  }
+}
+
+
+.contacts__checkbox-text::before{
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  left: -22px;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $colorGrayDark;
+  transition: 0.3s;
+}
+
+.contacts__checkbox-input:checked + .contacts__checkbox-text::before {
+  border-color: $colorViolet;
+  background-color: $colorViolet;
+  background-image: url("images/Path3.svg");
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+
+.contacts__checkbox{
+  padding-left: 21px;
+}
+
+.contacts__checkbox-link{
+  color: $colorViolet;
+  text-decoration: underline;
+}
+
+.contacts__img{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}

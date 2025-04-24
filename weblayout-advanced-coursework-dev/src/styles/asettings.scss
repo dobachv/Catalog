@@ -1,0 +1,269 @@
+@import 'minix';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.container{
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+  @include respond-to(handhelds){
+    padding: 0 36px;
+  }
+  @include respond-to(medium-screens){
+    padding: 0 70px;
+  }
+  @include respond-to(wide-screens){
+    padding: 0 12px;
+  }
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+
+
+.h2{
+  margin-bottom: 26px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  color: $colorBlack;
+  @include respond-to(wide-screens){
+    font-size: 24px;
+    line-height: 24.07px;
+  }
+}
+
+.h3{
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  color: $colorBlack;
+}
+
+.mr-l{
+  margin-left: 30px;
+}
+
+.mb-18{
+  margin-bottom: 18px;
+  @include respond-to(wide-screens){
+    margin-bottom: 15px;
+  }
+}
+
+.mb-5{
+  margin-bottom: 5px;
+}
+
+
+.p-text{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25.2px;
+	color: $colorBlack;
+}
+
+.p-text-gray{
+	font-family:"Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	color: $colorGray
+}
+
+
+
+.p-16{
+  font-size: 16px;
+  line-height: 28.8px;
+  @include respond-to(wide-screens){
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+}
+
+
+.p-24{
+	font-size: 24px;
+	line-height: 30.32px;
+  @include respond-to(wide-screens){
+    font-size: 16px;
+	  line-height: 20.08px;
+  }
+}
+
+.p-36{
+	font-size: 36px;
+	line-height: 46.8px;
+  @include respond-to(wide-screens){
+    font-size: 24px;
+	line-height: 31.32px;
+  }
+}
+
+.gray{
+	color: $colorGray;
+}
+
+
+.p-bold{
+  margin-bottom: 10px;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+	color: $colorBlack;}
+
+
+.p-bold-orange{
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.79px;
+  color: $colorOrange;
+}
+
+
+
+
+.price{
+  margin-bottom: 25px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: $colorGray;
+  @include respond-to(wide-screens){
+    margin-bottom: 18px;
+  }
+}
+
+.filter-text{
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  color: $colorGrayDark;
+}
+
+.link-svg{
+  vertical-align: bottom;
+}
+
+.link{
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  color: $colorViolet;
+  text-decoration: none;
+  transition:  background-color 0.2s ease-in-out, text-decoration  0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover{
+    .link-tex{
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      color: $colorViolet
+    }
+    .link-svg{
+      path{
+        stroke:$colorWhite;
+      }
+      circle{
+        stroke:$colorViolet;
+      }
+
+      background-color:$colorViolet;
+      border-radius: 50%;
+    }
+
+  }
+  &:focus{
+    .link-tex{
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      color: $colorViolet
+    }
+    .link-svg{
+
+      path{
+        stroke:$colorWhite;
+      }
+      circle{
+        stroke:$colorViolet;
+      }
+
+      background-color:$colorVioletLight;
+      border-radius: 50%;
+    }
+
+  }
+  &:active{
+    .link-tex{
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      color: $colorVioletDark
+    }
+    .link-svg{
+
+      path{
+        stroke:$colorWhite;
+      }
+      circle{
+        stroke:$colorVioletDark;
+      }
+
+      background-color:$colorVioletDark;
+      border-radius: 50%;
+    }
+
+}
+@include respond-to(wide-screens){
+  display: none;
+ }
+}
+
+
+.hyphens {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}

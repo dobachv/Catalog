@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SitDownPls — интернет-магазин мебели</title>
+		<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<!--=include header.html -->
+	<main>
+		<section class="catalog">
+			<div class="container catalog__container">
+				<div class="catalog__title">
+					<a  href="index.html" class="catalog-text p-text-gray">
+						Главная
+					</a>
+					<span class="catalog-text p-text-gray">
+					/
+					</span>
+					<a  href="catalog.html" class="catalog-text p-text-gray">
+						Каталог
+					</a>
+					<span class="catalog-text p-text-gray">
+					/
+					</span>
+					<a  href="" class="catalog-text p-text-gray">
+						Диваны
+					</a>
+					<span class="catalog-text p-text-gray">
+					/
+					</span>
+					<span class="catalog-text p-text-gray">
+						Прямые диваны
+					</span>
+				 </div>
+			 <div class="catalog__content">
+				<h1 class="h2 catalog__h2 list-reset">
+					Каталог
+				</h1>
+				<div class="catalog__filter">
+					<p class="catalog__filter-h4 list-reset">
+						Фильтровать по:
+					</p>
+					<div class="catalog__filter-color">
+						<p class="catalog__filter-p filter-text list-reset">
+							Цвет
+						</p>
+						<ul class="catalog__filter-list list-reset">
+							<li class="catalog__filter-item">
+								<label class="catalog__checkbox">
+									<input class="catalog__checkbox-input" type="checkbox"  name="brown"/>
+									<span class="catalog__checkbox-text filter-text" >Коричневый </span>
+							</label>
+							</li>
+							<li class="catalog__filter-item">
+								<label class="catalog__checkbox">
+									<input class="catalog__checkbox-input" type="checkbox"  name="black"/>
+									<span class="catalog__checkbox-text filter-text" >Черный </span>
+							</label>
+							</li>
+							<li class="catalog__filter-item">
+								<label class="catalog__checkbox">
+									<input class="catalog__checkbox-input" type="checkbox"  name="blue"/>
+									<span class="catalog__checkbox-text filter-text" >Синий </span>
+							</label>
+							</li>
+							<li class="catalog__filter-item">
+								<label class="catalog__checkbox">
+									<input class="catalog__checkbox-input" type="checkbox"  name="white"/>
+									<span class="catalog__checkbox-text filter-text" >Белый </span>
+							</label>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog__filter-class">
+						<p class="catalog__filter-p filter-text list-reset">
+							Категория
+						</p>
+						<ul class="catalog__filter-list list-reset">
+							<li class="catalog__filter-item">
+								<label class="catalog__checkbox">
+									<input class="catalog__checkbox-input" type="checkbox"  name="sofa" />
+									<span class="catalog__checkbox-text filter-text" >Диваны </span>
+							</label>
+							</li>
+							<li class="catalog__filter-item">
+								<label class="catalog__checkbox">
+									<input class="catalog__checkbox-input" type="checkbox"  name="armchair" />
+									<span class="catalog__checkbox-text filter-text" >Кресла </span>
+							</label>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog__filter-price">
+						<p class="catalog__filter-p filter-text list-reset">
+							Цена
+						</p>
+						<form  class="catalog__filter-form">
+							<label  class="catalog__filter-label filter-text" for="from">от</label>
+							<input class="catalog__filter-input filter-text" id="from" type="text" placeholder="2000">
+							<label class="catalog__filter-label filter-text" for="before">до</label>
+							<input  class="catalog__filter-input filter-text" id="before" type="text" placeholder="150 000">
+						</form>
+					</div>
+				<div class="catalog__mark">
+					 <div class="catalog__mark-img"></div>
+					 <div class="catalog__mark-content hyphens">
+						<div class="catalog__mark-text">
+							<p class="catalog__mark-title list-reset"> Оксфорд 1950</p>
+						<p class="catalog__mark-h1 filter-text list-reset ">
+							Новая коллекция изысканных кресел
+						</p>
+						</div>
+						<a href="" class="catalog__mark-link link">
+							<span class="catalog__mark-link-text link-tex">
+								В каталог
+							</span>
+							<svg class="catalog__mark-link-svg link-svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_20095_709)">
+								<path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<circle cx="11" cy="11" r="10" stroke="#A65CF0" stroke-width="2"/>
+								</g>
+								</svg>
+						</a>
+					 </div>
+				</div>
+				</div>
+				<div class="catalog__price-content">
+					<ul class="catalog__price-list list-reset">
+						<li class="catalog__card card">
+							<div class="card-star">
+							<svg class="card-star-svg"  aria-label="Рейтинг"  width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							 <path d="M15.1419 5.28193L10.451 4.59758L8.35408 0.330127C8.29681 0.213287 8.20259 0.118702 8.08619 0.0612089C7.79428 -0.0834504 7.43956 0.037099 7.29361 0.330127L5.19667 4.59758L0.505822 5.28193C0.376496 5.30047 0.258254 5.36167 0.167726 5.45441C0.058282 5.56733 -0.00202656 5.71924 5.20001e-05 5.87678C0.00213056 6.03431 0.0664262 6.18457 0.178811 6.29454L3.5727 9.61614L2.77088 14.3064C2.75208 14.4156 2.7641 14.5278 2.8056 14.6304C2.84709 14.733 2.91639 14.8218 3.00564 14.8869C3.09489 14.952 3.20052 14.9906 3.31054 14.9985C3.42056 15.0064 3.53059 14.9831 3.62813 14.9314L7.82384 12.717L12.0196 14.9314C12.1341 14.9926 12.2671 15.013 12.3946 14.9908C12.7161 14.9352 12.9322 14.6291 12.8768 14.3064L12.075 9.61614L15.4689 6.29454C15.5613 6.20367 15.6222 6.08497 15.6407 5.95515C15.6906 5.63059 15.4652 5.33015 15.1419 5.28193Z" fill="#FF862F"/>
+							</svg>
+								<span class="card-star-p  p-bold-orange">
+									5,0
+								</span>
+							</div>
+							<div class="card-img">
+								<img src="images/sofa1.png" alt="sofa">
+							</div>
+							<div class="card-block hyphens ">
+								<div class="card-text">
+									<h2  class="card-h3  h3 list-reset">
+										Диван кожаный "R-94"
+									</h2>
+									<p class="price list-reset">
+										94 990 руб
+									</p>
+								</div>
+								<a class="card-btn btn btn-reset">
+									Купить
+								</a>
+							</div>
+						</li>
+						<li class="catalog__card card">
+							<div class="card-star">
+							<svg class="card-star-svg"  aria-label="Рейтинг"  width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							 <path d="M15.1419 5.28193L10.451 4.59758L8.35408 0.330127C8.29681 0.213287 8.20259 0.118702 8.08619 0.0612089C7.79428 -0.0834504 7.43956 0.037099 7.29361 0.330127L5.19667 4.59758L0.505822 5.28193C0.376496 5.30047 0.258254 5.36167 0.167726 5.45441C0.058282 5.56733 -0.00202656 5.71924 5.20001e-05 5.87678C0.00213056 6.03431 0.0664262 6.18457 0.178811 6.29454L3.5727 9.61614L2.77088 14.3064C2.75208 14.4156 2.7641 14.5278 2.8056 14.6304C2.84709 14.733 2.91639 14.8218 3.00564 14.8869C3.09489 14.952 3.20052 14.9906 3.31054 14.9985C3.42056 15.0064 3.53059 14.9831 3.62813 14.9314L7.82384 12.717L12.0196 14.9314C12.1341 14.9926 12.2671 15.013 12.3946 14.9908C12.7161 14.9352 12.9322 14.6291 12.8768 14.3064L12.075 9.61614L15.4689 6.29454C15.5613 6.20367 15.6222 6.08497 15.6407 5.95515C15.6906 5.63059 15.4652 5.33015 15.1419 5.28193Z" fill="#FF862F"/>
+							</svg>
+								<span class="card-star-p  p-bold-orange">
+									4,9
+								</span>
+							</div>
+							<div class="card-img">
+								<img src="images/sofa2.png" alt="sofa">
+							</div>
+							<div class="card-block hyphens ">
+								<div class="card-text">
+									<h2 class="card-h3  h3 list-reset">
+										Диван апартековый "T-75"
+									</h2>
+									<p class="price list-reset">
+										69 990 руб
+									</p>
+								</div>
+								<a class="card-btn btn btn-reset">
+									Купить
+								</a>
+							</div>
+						</li>
+						<li class="catalog__card card">
+							<div class="card-star">
+							<svg class="card-star-svg"  aria-label="Рейтинг"  width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							 <path d="M15.1419 5.28193L10.451 4.59758L8.35408 0.330127C8.29681 0.213287 8.20259 0.118702 8.08619 0.0612089C7.79428 -0.0834504 7.43956 0.037099 7.29361 0.330127L5.19667 4.59758L0.505822 5.28193C0.376496 5.30047 0.258254 5.36167 0.167726 5.45441C0.058282 5.56733 -0.00202656 5.71924 5.20001e-05 5.87678C0.00213056 6.03431 0.0664262 6.18457 0.178811 6.29454L3.5727 9.61614L2.77088 14.3064C2.75208 14.4156 2.7641 14.5278 2.8056 14.6304C2.84709 14.733 2.91639 14.8218 3.00564 14.8869C3.09489 14.952 3.20052 14.9906 3.31054 14.9985C3.42056 15.0064 3.53059 14.9831 3.62813 14.9314L7.82384 12.717L12.0196 14.9314C12.1341 14.9926 12.2671 15.013 12.3946 14.9908C12.7161 14.9352 12.9322 14.6291 12.8768 14.3064L12.075 9.61614L15.4689 6.29454C15.5613 6.20367 15.6222 6.08497 15.6407 5.95515C15.6906 5.63059 15.4652 5.33015 15.1419 5.28193Z" fill="#FF862F"/>
+							</svg>
+								<span class="card-star-p  p-bold-orange">
+									4,8
+								</span>
+							</div>
+							<div class="card-img">
+								<img src="images/sofa3.png" alt="sofa">
+							</div>
+							<div class="card-block hyphens ">
+								<div class="card-text">
+									<h2  class="card-h3  h3 list-reset">
+										Диван тканевый "D-31"
+									</h2>
+									<p class="price list-reset">
+										28 490 руб
+									</p>
+								</div>
+								<a href="product-card.html" class="card-btn btn btn-reset">
+									Купить
+								</a>
+							</div>
+						</li>
+						<li class="catalog__card card">
+							<div class="card-star">
+							<svg class="card-star-svg"  aria-label="Рейтинг"  width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							 <path d="M15.1419 5.28193L10.451 4.59758L8.35408 0.330127C8.29681 0.213287 8.20259 0.118702 8.08619 0.0612089C7.79428 -0.0834504 7.43956 0.037099 7.29361 0.330127L5.19667 4.59758L0.505822 5.28193C0.376496 5.30047 0.258254 5.36167 0.167726 5.45441C0.058282 5.56733 -0.00202656 5.71924 5.20001e-05 5.87678C0.00213056 6.03431 0.0664262 6.18457 0.178811 6.29454L3.5727 9.61614L2.77088 14.3064C2.75208 14.4156 2.7641 14.5278 2.8056 14.6304C2.84709 14.733 2.91639 14.8218 3.00564 14.8869C3.09489 14.952 3.20052 14.9906 3.31054 14.9985C3.42056 15.0064 3.53059 14.9831 3.62813 14.9314L7.82384 12.717L12.0196 14.9314C12.1341 14.9926 12.2671 15.013 12.3946 14.9908C12.7161 14.9352 12.9322 14.6291 12.8768 14.3064L12.075 9.61614L15.4689 6.29454C15.5613 6.20367 15.6222 6.08497 15.6407 5.95515C15.6906 5.63059 15.4652 5.33015 15.1419 5.28193Z" fill="#FF862F"/>
+							</svg>
+								<span class="card-star-p  p-bold-orange">
+									4,8
+								</span>
+							</div>
+							<div class="card-img">
+								<img src="images/sofa4.png" alt="sofa">
+							</div>
+							<div class="card-block hyphens ">
+								<div class="card-text">
+									<h2 class="card-h3  h3 list-reset">
+										Диван велюровый "Y-68"
+									</h2>
+									<p class="price list-reset">
+										22 990 руб
+									</p>
+								</div>
+								<a class="card-btn btn btn-reset">
+									Купить
+								</a>
+							</div>
+						</li>
+						<li class="catalog__card card">
+							<div class="card-star">
+							<svg class="card-star-svg"  aria-label="Рейтинг"  width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							 <path d="M15.1419 5.28193L10.451 4.59758L8.35408 0.330127C8.29681 0.213287 8.20259 0.118702 8.08619 0.0612089C7.79428 -0.0834504 7.43956 0.037099 7.29361 0.330127L5.19667 4.59758L0.505822 5.28193C0.376496 5.30047 0.258254 5.36167 0.167726 5.45441C0.058282 5.56733 -0.00202656 5.71924 5.20001e-05 5.87678C0.00213056 6.03431 0.0664262 6.18457 0.178811 6.29454L3.5727 9.61614L2.77088 14.3064C2.75208 14.4156 2.7641 14.5278 2.8056 14.6304C2.84709 14.733 2.91639 14.8218 3.00564 14.8869C3.09489 14.952 3.20052 14.9906 3.31054 14.9985C3.42056 15.0064 3.53059 14.9831 3.62813 14.9314L7.82384 12.717L12.0196 14.9314C12.1341 14.9926 12.2671 15.013 12.3946 14.9908C12.7161 14.9352 12.9322 14.6291 12.8768 14.3064L12.075 9.61614L15.4689 6.29454C15.5613 6.20367 15.6222 6.08497 15.6407 5.95515C15.6906 5.63059 15.4652 5.33015 15.1419 5.28193Z" fill="#FF862F"/>
+							</svg>
+								<span class="card-star-p  p-bold-orange">
+									4,8
+								</span>
+							</div>
+							<div class="card-img">
+								<img src="images/sofa5.png" alt="sofa">
+							</div>
+							<div class="card-block hyphens ">
+								<div class="card-text">
+									<h2 class="card-h3  h3 list-reset">
+										Диван из&nbsp;шинила "W-95"
+									</h2>
+									<p class="price list-reset">
+										22 990 руб
+									</p>
+								</div>
+								<a class="card-btn btn btn-reset">
+									Купить
+								</a>
+							</div>
+						</li>
+						<li class="catalog__card card">
+							<div class="card-star">
+							<svg class="card-star-svg"  aria-label="Рейтинг"  width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							 <path d="M15.1419 5.28193L10.451 4.59758L8.35408 0.330127C8.29681 0.213287 8.20259 0.118702 8.08619 0.0612089C7.79428 -0.0834504 7.43956 0.037099 7.29361 0.330127L5.19667 4.59758L0.505822 5.28193C0.376496 5.30047 0.258254 5.36167 0.167726 5.45441C0.058282 5.56733 -0.00202656 5.71924 5.20001e-05 5.87678C0.00213056 6.03431 0.0664262 6.18457 0.178811 6.29454L3.5727 9.61614L2.77088 14.3064C2.75208 14.4156 2.7641 14.5278 2.8056 14.6304C2.84709 14.733 2.91639 14.8218 3.00564 14.8869C3.09489 14.952 3.20052 14.9906 3.31054 14.9985C3.42056 15.0064 3.53059 14.9831 3.62813 14.9314L7.82384 12.717L12.0196 14.9314C12.1341 14.9926 12.2671 15.013 12.3946 14.9908C12.7161 14.9352 12.9322 14.6291 12.8768 14.3064L12.075 9.61614L15.4689 6.29454C15.5613 6.20367 15.6222 6.08497 15.6407 5.95515C15.6906 5.63059 15.4652 5.33015 15.1419 5.28193Z" fill="#FF862F"/>
+							</svg>
+								<span class="card-star-p  p-bold-orange">
+									4,8
+								</span>
+							</div>
+							<div class="card-img">
+								<img src="images/sofa6.png" alt="sofa">
+							</div>
+							<div class="card-block hyphens ">
+								<div class="card-text">
+									<h2 class="card-h3  h3 list-reset">
+										Диван флоковый "G-41"
+									</h2>
+									<p class="price list-reset">
+										17 990 руб
+									</p>
+								</div>
+								<a class="card-btn btn btn-reset">
+									Купить
+								</a>
+							</div>
+						</li>
+						<li class="catalog__card card">
+							<div class="card-star">
+							<svg class="card-star-svg"  aria-label="Рейтинг"  width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							 <path d="M15.1419 5.28193L10.451 4.59758L8.35408 0.330127C8.29681 0.213287 8.20259 0.118702 8.08619 0.0612089C7.79428 -0.0834504 7.43956 0.037099 7.29361 0.330127L5.19667 4.59758L0.505822 5.28193C0.376496 5.30047 0.258254 5.36167 0.167726 5.45441C0.058282 5.56733 -0.00202656 5.71924 5.20001e-05 5.87678C0.00213056 6.03431 0.0664262 6.18457 0.178811 6.29454L3.5727 9.61614L2.77088 14.3064C2.75208 14.4156 2.7641 14.5278 2.8056 14.6304C2.84709 14.733 2.91639 14.8218 3.00564 14.8869C3.09489 14.952 3.20052 14.9906 3.31054 14.9985C3.42056 15.0064 3.53059 14.9831 3.62813 14.9314L7.82384 12.717L12.0196 14.9314C12.1341 14.9926 12.2671 15.013 12.3946 14.9908C12.7161 14.9352 12.9322 14.6291 12.8768 14.3064L12.075 9.61614L15.4689 6.29454C15.5613 6.20367 15.6222 6.08497 15.6407 5.95515C15.6906 5.63059 15.4652 5.33015 15.1419 5.28193Z" fill="#FF862F"/>
+							</svg>
+								<span class="card-star-p  p-bold-orange">
+									4,8
+								</span>
+							</div>
+							<div class="card-img">
+								<img src="images/sofa7.png" alt="sofa">
+							</div>
+							<div class="card-block hyphens ">
+								<div class="card-text">
+									<h2 class="card-h3  h3 list-reset">
+										Диван шиниловый "V-43"
+									</h2>
+									<p class="price list-reset">
+										19 990 руб
+									</p>
+								</div>
+								<a class="card-btn btn btn-reset">
+									Купить
+								</a>
+							</div>
+						</li>
+						<li class="catalog__card card">
+							<div class="card-star">
+							<svg class="card-star-svg"  aria-label="Рейтинг"  width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							 <path d="M15.1419 5.28193L10.451 4.59758L8.35408 0.330127C8.29681 0.213287 8.20259 0.118702 8.08619 0.0612089C7.79428 -0.0834504 7.43956 0.037099 7.29361 0.330127L5.19667 4.59758L0.505822 5.28193C0.376496 5.30047 0.258254 5.36167 0.167726 5.45441C0.058282 5.56733 -0.00202656 5.71924 5.20001e-05 5.87678C0.00213056 6.03431 0.0664262 6.18457 0.178811 6.29454L3.5727 9.61614L2.77088 14.3064C2.75208 14.4156 2.7641 14.5278 2.8056 14.6304C2.84709 14.733 2.91639 14.8218 3.00564 14.8869C3.09489 14.952 3.20052 14.9906 3.31054 14.9985C3.42056 15.0064 3.53059 14.9831 3.62813 14.9314L7.82384 12.717L12.0196 14.9314C12.1341 14.9926 12.2671 15.013 12.3946 14.9908C12.7161 14.9352 12.9322 14.6291 12.8768 14.3064L12.075 9.61614L15.4689 6.29454C15.5613 6.20367 15.6222 6.08497 15.6407 5.95515C15.6906 5.63059 15.4652 5.33015 15.1419 5.28193Z" fill="#FF862F"/>
+							</svg>
+								<span class="card-star-p  p-bold-orange">
+									4,7
+								</span>
+							</div>
+							<div class="card-img">
+								<img src="images/sofa8.png" alt="sofa">
+							</div>
+							<div class="card-block hyphens ">
+								<div class="card-text">
+									<h2 class="catalog__card-h3 card-h3   h3 list-reset">
+										Диван велюровый "S-99"
+									</h2>
+									<p class="price list-reset">
+										19 990 руб
+									</p>
+								</div>
+								<a class="card-btn btn btn-reset">
+									Купить
+								</a>
+							</div>
+						</li>
+						<li class="catalog__card card">
+							<div class="card-star">
+							<svg class="card-star-svg"  aria-label="Рейтинг"  width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							 <path d="M15.1419 5.28193L10.451 4.59758L8.35408 0.330127C8.29681 0.213287 8.20259 0.118702 8.08619 0.0612089C7.79428 -0.0834504 7.43956 0.037099 7.29361 0.330127L5.19667 4.59758L0.505822 5.28193C0.376496 5.30047 0.258254 5.36167 0.167726 5.45441C0.058282 5.56733 -0.00202656 5.71924 5.20001e-05 5.87678C0.00213056 6.03431 0.0664262 6.18457 0.178811 6.29454L3.5727 9.61614L2.77088 14.3064C2.75208 14.4156 2.7641 14.5278 2.8056 14.6304C2.84709 14.733 2.91639 14.8218 3.00564 14.8869C3.09489 14.952 3.20052 14.9906 3.31054 14.9985C3.42056 15.0064 3.53059 14.9831 3.62813 14.9314L7.82384 12.717L12.0196 14.9314C12.1341 14.9926 12.2671 15.013 12.3946 14.9908C12.7161 14.9352 12.9322 14.6291 12.8768 14.3064L12.075 9.61614L15.4689 6.29454C15.5613 6.20367 15.6222 6.08497 15.6407 5.95515C15.6906 5.63059 15.4652 5.33015 15.1419 5.28193Z" fill="#FF862F"/>
+							</svg>
+								<span class="card-star-p  p-bold-orange">
+									4,7
+								</span>
+							</div>
+							<div class="card-img">
+								<img src="images/sofa9.png" alt="sofa">
+							</div>
+							<div class="card-block hyphens ">
+								<div class="card-text">
+									<h2 class="catalog__card-h3 card-h3   h3 list-reset">
+										Диван из&nbsp;кожзама "F-85"
+									</h2>
+									<p class="price list-reset">
+										26 990 руб
+									</p>
+								</div>
+								<a class="card-btn btn btn-reset">
+									Купить
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="catalog__block-btn list-reset">
+            <li class="catalog__block-btn-item">
+              <button class="btn-list filter-text btn-reset">1</button>
+            </li>
+            <li class="catalog__block-btn-item">
+              <button class="btn-list filter-text btn-reset">2</button>
+            </li>
+            <li class="catalog__block-btn-item none">
+              <button class="btn-list filter-text none btn-reset">3</button>
+            </li>
+          </ul>
+				</div>
+			</div>
+
+	</div>
+		</section>
+
+	</main>
+	<!--=include footer.html -->
+</body>
+
+</html>

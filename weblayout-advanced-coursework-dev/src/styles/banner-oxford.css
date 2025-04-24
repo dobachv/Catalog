@@ -1,0 +1,125 @@
+.banner-oxford {
+  margin: 0;
+  background-image: url(images/banner-oxford.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1186px) {
+  .banner-oxford {
+    background-image: url(images/banner-oxford_1.png);
+  }
+}
+@media only screen and (max-width: 882px) {
+  .banner-oxford {
+    background-position: left;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .banner-oxford {
+    height: 209px;
+    background-image: url(images/banner-oxford_320.png);
+    background-size: cover;
+    background-position: top;
+  }
+}
+
+.banner-oxford__h1 {
+  margin-bottom: 49px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 57.6px;
+  color: #999999;
+  color: #fff;
+}
+@media only screen and (max-width: 670px) {
+  .banner-oxford__h1 {
+    padding-right: 70px;
+    font-size: 16px;
+    line-height: 20.24px;
+    margin-bottom: 143px;
+  }
+}
+
+@media only screen and (max-width: 882px) {
+  .banner-oxford__container {
+    padding: 0 36px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .banner-oxford__container {
+    padding: 0 12px;
+    height: 100%;
+    position: relative;
+  }
+}
+
+.banner-oxford__content {
+  max-width: 700px;
+  padding: 153px 0 152px 0;
+}
+@media only screen and (max-width: 1186px) {
+  .banner-oxford__content {
+    padding: 155px 0 148px 0;
+  }
+}
+@media only screen and (max-width: 882px) {
+  .banner-oxford__content {
+    padding: 155px 0 152px 0;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .banner-oxford__content {
+    padding: 0 12px;
+  }
+}
+
+.banner-oxford__btn {
+  padding: 21px 50px 22px 51px;
+  border-radius: 10px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #fff;
+  background-color: #A65CF0;
+  outline: 2px solid #A65CF0;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  padding: 20px 29px 22px 33px;
+}
+.banner-oxford__btn:hover {
+  background-color: #C998FB;
+  outline: 2px solid #C998FB;
+}
+.banner-oxford__btn:focus {
+  background-color: #C998FB;
+  outline: 2px solid #A65CF0;
+}
+.banner-oxford__btn:active {
+  background-color: #7033AC;
+  outline: 2px solid #7033AC;
+}
+@media only screen and (max-width: 670px) {
+  .banner-oxford__btn {
+    position: absolute;
+    width: 296px;
+    bottom: -93px;
+    left: 10px;
+  }
+}
+
+.banner-oxford__title {
+  font-family: "Playfair Display";
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 72px;
+  color: #D5B986;
+}
+@media only screen and (max-width: 670px) {
+  .banner-oxford__title {
+    padding: 31px 42px 0px 0px;
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+}/*# sourceMappingURL=banner-oxford.css.map */

@@ -1,0 +1,150 @@
+$colorOrange: #FF862F;
+$colorOrangeLight:#FFBD59;
+$colorOrangeFon: #FFF5D1;
+$colorBrown:#BB370E;
+$colorGray:  #999999;
+$colorGrayFon: #F8EFFF;
+$colorGrayFonDrak:#EAEAEA;
+$colorGrayDark:  #666;
+$colorGraylight: #F6F6F6;
+$colorBlack:  #333333;
+$colorVioletLight:  #C998FB;
+$colorViolet: #A65CF0;
+$colorVioletFon: #EBD1FF;
+$colorVioletDark: #7033AC;
+$colorWhite: #fff;
+$colorBeige: #D5B986;
+$colorGreen: #B8EC64;
+
+
+
+$large: 1186px;
+$average: 882px;
+$small: 670px;
+
+
+
+
+@mixin respond-to($media) {
+	@if $media == handhelds {
+		@media only screen and (max-width: $large) { @content; }
+	}
+	@else if $media == medium-screens {
+		@media only screen and (max-width: $average ) { @content; }
+	}
+	@else if $media == wide-screens {
+		@media only screen and (max-width: $small) { @content; }
+	}
+}
+
+@mixin svg{
+  background-color: transparent;
+  transition:  background-color 0.2s ease-in-out, fill 0.2s ease-in-out;
+
+  &:hover{
+    background-color: transparent;
+    fill:$colorVioletLight;
+  }
+
+    &:focus{
+      background-color: $colorVioletLight;
+      fill:$colorWhite;
+   }
+  &:active{
+    background-color: transparent;
+    fill: $colorVioletDark;
+}
+}
+
+
+@mixin btn-violet{
+  padding: 21px 50px 22px 51px;
+  border-radius: 10px;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+	color: $colorWhite;
+  background-color: $colorViolet;
+  outline: 2px solid $colorViolet;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out ;
+  &:hover{
+    background-color: $colorVioletLight;
+    outline: 2px solid $colorVioletLight;
+  }
+  &:focus{
+    background-color: $colorVioletLight;
+    outline: 2px solid $colorViolet;
+  }
+  &:active{
+    background-color: $colorVioletDark;
+    outline: 2px solid $colorVioletDark;
+  }
+}
+
+@mixin btn-white{
+  border-radius: 10px;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+  padding: 19px 32px 17px 34px;
+  background-color: $colorGraylight;
+  color: $colorViolet;
+  outline: 2px solid $colorViolet;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out, color 0.3s ease-in-out ;
+  &:hover{
+    background-color: $colorViolet;
+    outline: 2px solid $colorViolet;
+    color: $colorWhite;
+  }
+  &:focus{
+    background-color: $colorVioletLight;
+    outline: 2px solid $colorVioletDark;
+    color: $colorWhite;
+  }
+  &:active{
+    background-color: $colorVioletDark;
+    outline: 2px solid $colorVioletDark;
+    color: $colorWhite;
+  }
+}
+
+@mixin top-card-320{
+  padding: 0;
+  justify-content: flex-start;
+  img{
+    height: auto;
+    width: 130%;
+  }
+  .top__list{
+    flex-direction: column;
+    gap:0px;
+  }
+  .mr-l{
+    margin-left: 15px;
+  }
+  .top__nav{
+    padding-top: 12px;
+    margin-bottom: 4px;
+  }
+
+  .top__item-linc{
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .top__item{
+    line-height: 14px;
+  }
+  .h3{
+    font-size: 16px;
+    line-height: 16.64px;
+  }
+  .top__card-img{
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+}
+
+
